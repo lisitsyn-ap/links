@@ -8,7 +8,10 @@
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background: linear-gradient(135deg, #2b5876, #4e4376);
+      /* Фон-картинка */
+      background: url("res/background.jpg") no-repeat center center fixed,
+                  linear-gradient(135deg, #2b5876, #4e4376);
+      background-size: cover;
       color: white;
       display: flex;
       flex-direction: column;
@@ -29,11 +32,13 @@
     h1 {
       margin: 10px 0;
       font-size: 1.8em;
+      text-shadow: 1px 1px 4px rgba(0,0,0,0.6);
     }
     p {
       margin: 5px 0 20px;
       font-size: 1em;
-      opacity: 0.85;
+      opacity: 0.9;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
     }
     .link {
       display: block;
@@ -42,19 +47,21 @@
       margin: 10px auto;
       padding: 12px;
       border-radius: 8px;
-      background: rgba(255,255,255,0.15);
+      background: rgba(0,0,0,0.4);
       color: white;
       text-decoration: none;
       font-weight: bold;
       transition: background 0.3s;
+      backdrop-filter: blur(4px);
     }
     .link:hover {
-      background: rgba(255,255,255,0.3);
+      background: rgba(0,0,0,0.6);
     }
     footer {
       margin-top: auto;
-      opacity: 0.7;
+      opacity: 0.8;
       font-size: 0.8em;
+      text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
     }
   </style>
 </head>
